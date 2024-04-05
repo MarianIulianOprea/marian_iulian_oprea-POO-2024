@@ -1,3 +1,10 @@
-﻿  BigBank.cpp
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  BankAccount.cpp
+  BigBank.cpp
+  CurrentAccount.cpp
+  SavingsAccount.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   BigBank.vcxproj -> C:\Users\oprea\marian_iulian_oprea-POO-2024\BigBank\x64\Debug\BigBank.exe

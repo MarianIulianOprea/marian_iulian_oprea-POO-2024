@@ -14,3 +14,15 @@ double CurrentAccount::GetOverdraftLimit()
 {
 	return overdraftLimit;
 }
+String^ CurrentAccount::ToString()
+{
+	String^ result = BankAccount::ToString();
+	result = String::Concat(result, ", Overdraft Limit: ");
+	result = String::Concat(result, overdraftLimit.ToString());
+	return result;
+}
+bool CurrentAccount::CanDebit(double amount)
+{
+	String^ details = RoutingInstructions(amount);
+	return (amount <= GetBalance() + overdraftLimit);
+}
